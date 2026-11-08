@@ -41,6 +41,9 @@ const config: Config = {
         wider: "0.05em",
         widest: "0.15em",
       },
+      spacing: {
+        4.5: "1.125rem",
+      },
     },
   },
   plugins: [

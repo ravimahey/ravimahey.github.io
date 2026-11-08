@@ -70,7 +70,7 @@ export default function ProjectCard({ project, featuredIndex }: Props) {
           )}
           <Link
             href={`/projects/${project.slug}`}
-            className="flex items-center gap-1.5 px-4.5 py-2.5 rounded-xl bg-gradient-to-b from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-[0_0_15px_rgba(59,130,246,0.25)]"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-b from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-[0_0_15px_rgba(59,130,246,0.25)] shrink-0"
           >
             <span>View Case Study</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -91,7 +91,7 @@ export default function ProjectCard({ project, featuredIndex }: Props) {
             </p>
           </div>
 
-          <div className="p-4.5 rounded-xl bg-amber-500/[0.03] border border-amber-500/20 light:bg-amber-50/50 light:border-amber-200 space-y-1.5">
+          <div className="p-5 rounded-2xl bg-amber-500/[0.04] border border-amber-500/20 light:bg-amber-50/60 light:border-amber-200 space-y-2">
             <span className="text-[11px] uppercase tracking-[0.15em] font-mono text-amber-400 font-semibold block">
               Problem Solved
             </span>

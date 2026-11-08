@@ -90,7 +90,7 @@ export default function Contact() {
             </div>
 
             {/* Availability details */}
-            <div className="p-4.5 rounded-2xl bg-zinc-900/40 border border-white/[0.06] light:bg-zinc-50 light:border-zinc-200 space-y-2.5 text-xs">
+            <div className="p-5 rounded-2xl bg-zinc-900/40 border border-white/[0.06] light:bg-zinc-50 light:border-zinc-200 space-y-2.5 text-xs">
               <div className="flex items-center gap-2 text-emerald-400 font-mono font-medium">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span>Current Status: Taking on Select Engagements</span>

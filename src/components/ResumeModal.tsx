@@ -18,7 +18,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md overflow-y-auto">
       <div className="relative w-full max-w-4xl max-h-[90vh] bg-[#0c0d12] border border-white/[0.1] rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.9)] flex flex-col overflow-hidden light:bg-white light:border-zinc-200">
         {/* Header bar */}
-        <div className="flex items-center justify-between px-6 py-4.5 border-b border-white/[0.08] bg-zinc-900/60 light:bg-zinc-50 light:border-zinc-200">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-white/[0.08] bg-zinc-900/60 light:bg-zinc-50 light:border-zinc-200">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20">
               <FileText className="w-5 h-5" />

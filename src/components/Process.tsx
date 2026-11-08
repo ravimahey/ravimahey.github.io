@@ -74,7 +74,7 @@ export default function Process() {
                 </p>
 
                 {/* Key Execution Actions */}
-                <div className="space-y-2 border-t border-white/[0.06] pt-4.5 light:border-zinc-100">
+                <div className="space-y-2 border-t border-white/[0.06] pt-5 light:border-zinc-100">
                   <span className="text-[10px] font-mono uppercase tracking-[0.15em] text-zinc-500 block font-semibold mb-2">
                     Execution Focus:
                   </span>
