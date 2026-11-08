@@ -43,6 +43,9 @@ jobs:
       - name: Build with Next.js (Static Export)
         run: pnpm run build
 
+      - name: Prevent Jekyll from ignoring _next directory
+        run: touch ./out/.nojekyll
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
