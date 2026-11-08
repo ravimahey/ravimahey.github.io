@@ -6,22 +6,24 @@
   --background: #050508;
   --foreground: #f8fafc;
   --border: rgba(255, 255, 255, 0.08);
-  --card-bg: rgba(13, 13, 18, 0.65);
+  --card-bg: rgba(13, 13, 18, 0.7);
   --card-border: rgba(255, 255, 255, 0.08);
   --card-hover: rgba(22, 22, 30, 0.85);
   --muted: #64748b;
   --muted-foreground: #94a3b8;
 }
 
+html.light,
 .light {
-  --background: #fafafc;
+  --background: #f8fafc;
   --foreground: #09090b;
   --border: #e2e8f0;
   --card-bg: #ffffff;
-  --card-border: #e4e4e7;
-  --card-hover: #f8fafc;
-  --muted: #71717a;
-  --muted-foreground: #52525b;
+  --card-border: #e2e8f0;
+  --card-hover: #f1f5f9;
+  --muted: #64748b;
+  --muted-foreground: #475569;
+  color-scheme: light;
 }
 
 * {
@@ -41,7 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Custom dark scrollbar */
@@ -54,13 +56,25 @@ body {
   background: #050508;
 }
 
+.light ::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #27272a;
   border-radius: 9999px;
 }
 
+.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
 /* Linear & Stripe style grid background */
@@ -71,10 +85,11 @@ body {
     linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
 }
 
-.light .tech-grid {
+.light .tech-grid,
+html.light .tech-grid {
   background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
 }
 
 /* Linear-style high-end glass cards */
@@ -86,12 +101,18 @@ body {
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
 }
 
-.light .glass-card {
-  background: rgba(255, 255, 255, 0.9);
+.light .glass-card,
+html.light .glass-card {
+  background: #ffffff !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 1px 3px 0 rgba(0, 0, 0, 0.04) !important;
+}
+
+.light .glass-card::before,
+html.light .glass-card::before {
+  background: linear-gradient(to right, transparent, rgba(59, 130, 246, 0.15), transparent) !important;
 }
 
 /* Typography Gradient Headlines (Linear style) */
@@ -101,8 +122,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.light .heading-gradient {
-  background: linear-gradient(180deg, #09090b 0%, #27272a 100%);
+.light .heading-gradient,
+html.light .heading-gradient {
+  background: linear-gradient(180deg, #09090b 0%, #334155 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -110,6 +132,13 @@ body {
 /* Blue-cyan high-tech accent gradient */
 .accent-gradient {
   background: linear-gradient(135deg, #60a5fa 0%, #38bdf8 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light .accent-gradient,
+html.light .accent-gradient {
+  background: linear-gradient(135deg, #1d4ed8 0%, #0284c7 50%, #4338ca 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -129,7 +158,102 @@ body {
   backdrop-filter: blur(8px);
 }
 
-.light .tech-pill {
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+.light .tech-pill,
+html.light .tech-pill {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+}
+
+/* Universal Light Mode Contrast Enhancements */
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6,
+html.light h1, html.light h2, html.light h3, html.light h4, html.light h5, html.light h6 {
+  color: #09090b !important;
+}
+
+.light p,
+html.light p {
+  color: #334155;
+}
+
+.light .border-zinc-800,
+html.light .border-zinc-800,
+.light .border-zinc-900,
+html.light .border-zinc-900,
+.light [class*="border-white/"],
+html.light [class*="border-white/"] {
+  border-color: #e2e8f0 !important;
+}
+
+.light .bg-zinc-950,
+html.light .bg-zinc-950,
+.light .bg-zinc-900,
+html.light .bg-zinc-900 {
+  background-color: #ffffff;
+}
+
+.light .bg-\[\#050508\],
+html.light .bg-\[\#050508\] {
+  background-color: #f8fafc !important;
+}
+
+.light .bg-\[\#0c0d12\],
+html.light .bg-\[\#0c0d12\] {
+  background-color: #ffffff !important;
+}
+
+.light .text-zinc-400,
+html.light .text-zinc-400 {
+  color: #475569;
+}
+
+.light .text-zinc-300,
+html.light .text-zinc-300 {
+  color: #1e293b;
+}
+
+.light .text-zinc-200,
+html.light .text-zinc-200 {
+  color: #0f172a;
+}
+
+.light .text-zinc-500,
+html.light .text-zinc-500 {
+  color: #64748b;
+}
+
+/* High contrast accent colors for light theme */
+.light .text-blue-400,
+html.light .text-blue-400 {
+  color: #2563eb !important;
+}
+
+.light .text-sky-400,
+html.light .text-sky-400 {
+  color: #0284c7 !important;
+}
+
+.light .text-emerald-400,
+html.light .text-emerald-400 {
+  color: #059669 !important;
+}
+
+.light .text-cyan-400,
+html.light .text-cyan-400 {
+  color: #0891b2 !important;
+}
+
+.light .text-purple-400,
+html.light .text-purple-400 {
+  color: #7c3aed !important;
+}
+
+.light .text-amber-400,
+html.light .text-amber-400 {
+  color: #d97706 !important;
+}
+
+.light .text-rose-400,
+html.light .text-rose-400 {
+  color: #e11d48 !important;
 }

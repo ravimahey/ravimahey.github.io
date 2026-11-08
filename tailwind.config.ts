@@ -43,7 +43,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }: { addVariant: (name: string, definition: string | string[]) => void }) {
+      addVariant("light", [".light &", "html.light &", ":root.light &"]);
+    },
+  ],
 };
 
 export default config;

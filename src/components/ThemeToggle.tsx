@@ -37,7 +37,7 @@ export default function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="w-9 h-9 rounded-lg border border-zinc-800 bg-zinc-900/60" />
+      <div className="w-9 h-9 rounded-lg border border-zinc-800 bg-zinc-900/60 light:border-zinc-200 light:bg-zinc-100" />
     );
   }
 
