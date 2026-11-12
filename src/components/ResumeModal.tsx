@@ -68,7 +68,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               </h1>
               <span className="text-xs text-emerald-400 font-mono flex items-center gap-1.5 font-medium">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Open for Freelance & Senior Engineering Roles
+                Employed Full-Time · Open for Senior Engineering & Advisory Roles
               </span>
             </div>
             <p className="text-base text-blue-400 mt-1 light:text-blue-600 font-medium">
@@ -125,7 +125,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <div className="border-l-2 border-blue-500/50 pl-4 py-0.5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <h5 className="font-bold text-white light:text-zinc-900 text-sm">
-                    Ordara — AI-Powered Business Intelligence SaaS
+                    ApexMetrics — AI-Powered Business Intelligence SaaS
                   </h5>
                   <span className="text-xs font-mono text-zinc-400">Next.js | NestJS | FastAPI | GCP</span>
                 </div>

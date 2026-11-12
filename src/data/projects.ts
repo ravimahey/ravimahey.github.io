@@ -2,15 +2,15 @@ import { Project } from "@/types";
 
 export const projectsData: Project[] = [
   {
-    id: "ordara",
-    slug: "ordara-bi-saas",
-    title: "Ordara",
+    id: "apexmetrics",
+    slug: "apexmetrics-bi-saas",
+    title: "ApexMetrics",
     tagline: "AI-Powered Business Intelligence SaaS for Multi-Outlet Retail & Hospitality",
     category: "Full-Stack Development | AI Engineering | SaaS",
     featured: true,
     statusBadge: "Production Ready Architecture",
     overview:
-      "A multi-tenant business intelligence and operational analytics platform designed for restaurants, cafes, and multi-unit retail businesses. Ordara unifies sales, accounting, and inventory streams, applying intelligent analysis to uncover real-time operational insights.",
+      "A multi-tenant business intelligence and operational analytics platform designed for restaurants, cafes, and multi-unit retail businesses. ApexMetrics unifies sales, accounting, and inventory streams, applying intelligent analysis to uncover real-time operational insights.",
     problem:
       "Retail and hospitality operators deal with fragmented datasets across accounting systems (QuickBooks, Xero), point-of-sale terminals, and inventory databases. Extracting actionable insights required tedious manual exports, spreadsheets, and delayed reporting.",
     solution:
@@ -73,7 +73,7 @@ export const projectsData: Project[] = [
       ],
     },
     githubUrl: "https://github.com/ravimahey",
-    liveUrl: "https://ordara.app",
+    liveUrl: "https://apexmetrics.dev",
     caseStudyAvailable: true,
   },
   {

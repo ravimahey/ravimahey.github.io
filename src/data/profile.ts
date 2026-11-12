@@ -18,14 +18,14 @@ export const profileData = {
   aboutDescription:
     "I'm a Full-Stack and Cloud Engineer passionate about building complete digital products. My work spans application development, AI integration, cloud infrastructure, automation and production operations.\n\nI enjoy working across the entire engineering lifecycle — transforming ideas into functional, scalable and maintainable products.",
   location: "India",
-  availability: "Available for freelance and engineering opportunities",
+  availability: "Currently working full-time · Open for tech advisory & senior roles",
   contactEmail: "ravikumar.ops18@gmail.com",
   githubUrl: "https://github.com/ravimahey",
   linkedinUrl: "https://www.linkedin.com/in/ravimahey/",
   websiteUrl: "https://ravimahey.github.io/",
   targetAudience: [
-    "International clients seeking autonomous engineering execution",
-    "Startups seeking technical co-founders or engineering partners",
+    "Engineering teams and startups seeking autonomous technical execution",
+    "Organizations looking for high-impact Full-Stack, AI and DevOps expertise",
     "Companies hiring Full-Stack, AI, Platform and DevOps Engineers",
     "Businesses building AI-powered SaaS products",
     "Founders needing someone to turn a product concept into production",

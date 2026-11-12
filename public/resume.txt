@@ -6,7 +6,7 @@ Email: ravikumar.ops18@gmail.com
 GitHub: https://github.com/ravimahey
 LinkedIn: https://www.linkedin.com/in/ravimahey/
 Website: https://ravimahey.github.io/
-Availability: Open for Freelance & Senior Engineering Opportunities
+Availability: Employed Full-Time · Open for Senior Engineering & Advisory Roles
 
 "From Idea to Production. I Build the Entire Product."
 "I don't just build applications. I architect, develop, deploy, and manage complete production-ready products."
@@ -35,7 +35,7 @@ Observability & Telemetry:
 --------------------------------------------------------------------------------
 FEATURED PRODUCTION PROJECTS & ARCHITECTURES
 --------------------------------------------------------------------------------
-1. Ordara — AI-Powered Business Intelligence SaaS
+1. ApexMetrics — AI-Powered Business Intelligence SaaS
    Category: Full-Stack Development | AI Engineering | SaaS
    Technologies: Next.js, NestJS, FastAPI, Python, PostgreSQL, Docker, GCP, Terraform
    Key Contributions:
